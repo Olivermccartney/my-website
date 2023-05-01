@@ -1,0 +1,47 @@
+:root {
+    --blue-color: rgb(12, 10, 125);
+}
+/* TYPE SELECTOR */
+ul {
+    color: rgb(0, 162, 255);
+}
+
+q {
+    color: #198ebd
+}
+
+img{
+    float:left;
+    margin-right: lem;
+
+}
+
+/*ID SELECTOR */
+
+#assignment {
+    clear: left;
+}
+
+/*CLASS SELECTOR */
+
+
+/* RELATIONAL SELECTOR */
+section#fig_header>ul {
+    color:var(--blue-color)
+}
+
+main em {
+    color:rgb(39, 104, 134)
+}
+
+section#fig_header a:visited {
+    color: rgb(20, 59, 185);
+}
+
+section#fig_header a:hover {
+    font-size: 200%;
+    color: rgb(13, 73, 143);
+}
+h1, h2, h3 {
+    color:var(--blue-color)
+}
