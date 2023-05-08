@@ -4,11 +4,11 @@
   
   /* TYPE SELECTOR */
   ul {
-    color: rgb(0, 162, 255);
+    color: rgb(31, 10, 216);
   }
   
   q {
-    color: #198ebd;
+    color: #063344;
   }
   
   img {
@@ -38,7 +38,7 @@
   
   section#fig_header a:hover {
     font-size: 200%;
-    color: rgb(13, 73, 143);
+    color: rgb(22, 119, 231);
   }
   
   h1, h2, h3 {
@@ -50,3 +50,50 @@
     color: blue;
     text-decoration: none;
   }
+  /* Border */
+.image-container {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Background image */
+main {
+  background-image: url("https://lh3.googleusercontent.com/8lm5sdT6W-Y5CvOpQ3_677ooViBtpeDXzWjvXm6ioQdeakSaRTQjsd9lyidQzHhBXS8uzh7ZEEvRrNs6rlQV-tLJKpkLOWXtLyYbEV3hL_Erm2lnM6rE-S_iC7Rk1CdoyN0nIGu68RNi-JrQN9MaekuKrSS-jLhiX3IBduZAcwAbNsI7nIYAtWrN2grh8IJBF1M9KRJksRFw53aqlJDiqsMYgPz-gzXrveCIQbKF7Ytbj3DW3EcMg2CQgGXbBFd-O_8ek28MV34-nZbjUNnhfZJNaHOsgYAIpS8qm9iJI3Hbc3zK0MK-BTwXGLCh3Lx8B5AcuarGe10lcpR2kTdJonjAjoHS3lt62j9PC64aHRfqy85bNnSH8k6BTucZyZYXNNGkQ0p223ZVPFBsupXzMJbKt6kmNc0hnCPddLNr-OeUC5W-37EwCZcHPJWUdXkVreSZS39D_-Y-d7Hu987Fl87OR3DjnHRItEuaOLsJf6yJ2Pr47w-WgAb2AKbFyVzOQvTT3vMFor8VP_yag4G7gfmfUXAtVORzolprld14kFSKoV78tTkdOszhoz_vSRJCFiSalbNqY147no4C1IUzih5CwQTJKvCJaEpUtOmRlG8iYjkMiIeZTmSOk2-mdUym-6xM4ciALsDHMzayjD85Vupj3lqOjyeCS2P497mP-zvABovf9o2HlaG_NC5POJcuxriQCNroRV6meXs6MhbDGZWuIigK4ADHZG5eWk8vCaR47-SZsLLJf3Ne4xSTwPvctoKetpHbTnPrP6sNXbF-BJlzesj4ljszB0cG2tMz0cwW8kyi7KBvzJsbsSZzfpQsDtUGNVhohOCNjcpdJURrmBkBmjWJMgPMzxquMp82yMuAyAelo7TO6O6-GxaUs-kU88wbmmbxfYPlgmIyfHlr8C-HiUTM5jGSrrpIUhx460JTBOhh78tSTjmROImGWvN7PlhW3UuemhJP1n4j_luh8Q=w1000-h667-s-no?authuser=0");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+/* Adjust styles for the content items */
+main > * {
+  margin-bottom: 20px;
+}
+
+/* 2-column layout */
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Padding */
+.main-content > div {
+  padding: 10px;
+  background-color: #1b2975;
+}
+
+/* Margin for the header */
+header {
+  margin: 20px;
+}
+
+/* Margin for the main section */
+main {
+  margin: 20px;
+}
+
+/* Margin for the image container */
+.image-container {
+  margin: 10px;
+}
