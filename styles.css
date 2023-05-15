@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -8,20 +9,49 @@ html, body {
   --blue-color: rgb(12, 10, 125);
 }
 
-/* TYPE SELECTOR */
-ul {
-  color: rgb(31, 10, 216);
-}
-
-q {
-  color: #063344;
-}
+/* HEADER */
 
 img {
   float: left;
   margin-right: 1em;
   max-width: 100%;
 }
+
+/* Navigation Menu */
+#nav_menu ul {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav_menu ul li {
+  float: left;
+  width: 20%;
+}
+
+#nav_menu ul li a {
+  display: block;
+  text-align: center;
+  padding: 2% 0;
+  background-color: rgb(22, 119, 231);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+#nav_menu::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#nav_menu ul li a.current {
+  background-color: #01a2ff;
+}
+
+/* TYPE SELECTOR */
+
 
 /* ID SELECTOR */
 #assignment {
@@ -31,9 +61,6 @@ img {
 /* CLASS SELECTOR */
 
 /* RELATIONAL SELECTOR */
-section#fig_header>ul {
-  color: var(--blue-color);
-}
 
 main em {
   color: rgb(39, 104, 134);
@@ -48,7 +75,9 @@ section#fig_header a:hover {
   color: rgb(22, 119, 231);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--blue-color);
 }
 
@@ -57,60 +86,59 @@ a {
   color: blue;
   text-decoration: none;
 }
+
 /* Border */
 .image-container {
-float: left;
-border: 1px solid rgb(179, 179, 179);
-padding: 10px;
-margin: 20px;
-min-width: 200px;
-max-width: 400px;
-}
+  float: left;
+  padding: 2.5%;
+  margin: 5%;
+  width: 30%;
 
+}
 
 /* Background image */
 body {
-background: linear-gradient(to bottom, #52a9fa, #8b8be7);
-padding: 0;
-margin: 0;
+  position: relative;
+  background: linear-gradient(to bottom, #52a9fa, #8b8be7);
+  padding: 0;
+  margin: 0;
 }
 
 /* Adjust styles for the content items */
-main > * {
-margin-bottom: 20px;
+main>* {
+  margin-bottom: 5%;
 }
-
 
 /* 2-column layout */
 .main-content {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5%;
 }
 
-
 /* Padding */
-.main-content > div {
-  padding: 10px;
+.main-content>div {
+  padding: 2.5%;
   background-color: #1b2975;
-  }
-
+}
 
 /* Margin for the header */
 header {
-margin: 20px;
+  margin: 5%;
 }
-
 
 /* Margin for the main section */
 main {
-margin: 20px;
+  margin: 5%;
 }
 
+/* Media query for the breakpoint */
+@media (max-width: 600px) {
+  /* Adjust styles for the breakpoint */
 
-/* Margin for the image container */
-.image-container {
-margin: 40px;
+  .image-container {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+  }
 }
-
-/* Breakpoint @media only screen and (max-width: 675px) (max-height: 675px) */
