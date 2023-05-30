@@ -1,100 +1,98 @@
+@font-face {
+  font-family: pangolin;
+  src: url(Pangolin/Pangolin-Regular.ttf);
+}
+
 /* Global styles */
-html,
-body {
+html {
   height: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 :root {
   --blue-color: rgb(12, 10, 125);
 }
 
-/* Header */
-header img {
-  float: left;
-  margin-right: 1em;
-  max-width: 100%;
+header {
+  text-align: center;
+  color: #ffffff;
+  font-size: 40px;
 }
 
 /* Navigation Menu */
+#nav_menu {
+	position: fixed;
+	top: 45%;
+	right: 10px;
+	width: 200px;
+}
+
 #nav_menu ul {
-  display: flex;
-  position: relative;
-  width: 100%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	display: block;
+	position: relative;
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 #nav_menu ul li {
-  flex: 1;
+	margin-bottom: 20px;
 }
 
 #nav_menu ul li a {
-  display: block;
-  text-align: center;
-  padding: 2% 0;
-  background-color: rgb(22, 119, 231);
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-}
-
-#nav_menu::after {
-  content: "";
-  display: block;
-  clear: both;
+	display: block;
+	text-align: center;
+	padding: 20px 0;
+	background-color: rgb(22, 119, 231);
+	color: rgb(255, 255, 255);
+	font-family: pangolin;
+	text-decoration: none;
+	border-radius: 20px;
+	opacity: 50%;
 }
 
 #nav_menu ul li a.current {
-  background-color: #01a2ff;
+	background-color: #f19c2b;
+
 }
 
-/* Selectors */
-main em {
-  color: rgb(39, 104, 134);
+#nav_menu ul li a:hover {
+	background-color: #01a2ff;
 }
 
-section#fig_header a:visited {
-  color: rgb(20, 59, 185);
-}
-
-section#fig_header a:hover {
-  font-size: 200%;
-  color: rgb(22, 119, 231);
-}
-
-h1,
-h2,
-h3 {
-  color: var(--blue-color);
-}
-
-/* Links */
-a {
-  color: blue;
-  text-decoration: none;
-}
-
-/* Border */
-.image-container {
+p {
   float: left;
-  padding: 2.5%;
-  margin: 5%;
-  width: 30%;
+  width: 40%;
+  font-size: 200%;
+  overflow-y: scroll;
+  height: 400px;
+  color: #ffffff;
+  font-family: pangolin;
+  padding: 1%;
+
+}
+
+.image-container {
+  float: right;
+  width: 48%;
+  text-align: center;
+  padding-top: 3%;
+  padding-right:10%
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
 }
 
 /* Background image */
 body {
+  font-family: pangolin;
   position: relative;
-  background: linear-gradient(to bottom, #52a9fa, #8b8be7);
+  background: linear-gradient(to bottom, #52a9fa, #f19c2b);
   padding: 0;
   margin: 0;
-}
-
-/* Adjust styles for content items */
-main > * {
-  margin-bottom: 5%;
 }
 
 /* 2-column layout */
@@ -105,7 +103,7 @@ main > * {
 }
 
 /* Padding */
-.main-content > div {
+.main-content>div {
   padding: 2.5%;
   background-color: #1b2975;
 }
@@ -118,31 +116,4 @@ header {
 /* Margin for main section */
 main {
   margin: 5%;
-}
-
-/* Media query for the breakpoint */
-@media (max-width: 600px) {
-  /* Adjust styles for the breakpoint */
-  .image-container {
-    display: block;
-    margin: 0 auto;
-    max-width: 80%;
-  }
-}
-
-/* Grid component */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-
-.grid-item {
-  background-color: #3095d8;
-  padding: 20px;
-  text-align: center;
-}
-
-/*I need to find a good use of the grid*/
-
-/*Also monday I will make major changes to the website so its presentable before peer reviews*/
+} 
