@@ -1,0 +1,5 @@
+For the main page: Bring the nav element into the main so that main consists of 3 separate elements (nav, p, and div). You can make use of the flexbox formatting to realign these three elements as the website size changes. The default display type for flexbox is row, which is perfect for this use case. But using media queries, you might want to eventually switch to columns to stack the three elements and make use of 'order' to get the nav menu at the top of the screen. This will make your website have responsive design as well as making the layout easier for you to edit and add onto in the future.
+/*I put nav element into the main element as suggested, which did actually make it more clear to edit.*/
+
+For the nav menu's: I suggest to make them all the same size. Clicking through the pages has the boxes change size and position slightly, which can be jarring.
+/*I corrected the nav menu between the home page and about fig page, I've been attempting to correct the nav menu on pics of fig, but have not found the sole source for the different font sizes quiet yet.
