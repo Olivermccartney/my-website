@@ -1,0 +1,42 @@
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    p {
+      float: none;
+      width: 100%;
+      font-size: 140%;
+      overflow-y: visible;
+      height: auto;
+    }
+  
+    .image-container {
+      float: none;
+      width: 100%;
+      text-align: center;
+      padding-top: 3%;
+      padding-right: 0;
+    }
+  
+    #nav_menu {
+      position: static;
+      margin-top: 20px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    #nav_menu ul {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+    }
+  
+    #nav_menu ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    #nav_menu ul li a {
+      display: block;
+      padding: 10px;
+    }
+  }
+  

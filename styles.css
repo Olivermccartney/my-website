@@ -9,55 +9,63 @@ html {
 }
 
 :root {
-  --blue-color: rgb(12, 10, 125);
+  background: linear-gradient(to bottom, #52a9fa, #f19c2b);
+  padding: 0;
+  margin: 0;
+  background-size: 100%;
+  background-repeat: no-repeat scroll;
+  background-attachment: fixed;
 }
+
 
 header {
   text-align: center;
   color: #ffffff;
-  font-size: 160%;
+  font-size: 300%;
+  margin: 5%;
+  font-family: pangolin;
 }
 
 /* Navigation Menu */
 #nav_menu {
-	position: fixed;
-	top: 45%;
-	right: 10px;
-	width: 200px;
+  position: fixed;
+  top: 45%;
+  right: 10px;
+  width: 200px;
 }
 
 #nav_menu ul {
-	display: block;
-	position: relative;
-	width: 100%;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  display: block;
+  position: relative;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 #nav_menu ul li {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #nav_menu ul li a {
-	display: block;
-	text-align: center;
-	padding: 20px 0;
-	background-color: rgb(22, 119, 231);
-	color: rgb(255, 255, 255);
-	font-family: pangolin;
-	text-decoration: none;
-	border-radius: 20px;
-	opacity: 50%;
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+  background-color: rgb(22, 119, 231);
+  color: rgb(255, 255, 255);
+  font-family: pangolin;
+  text-decoration: none;
+  border-radius: 20px;
+  opacity: 50%;
 }
 
 #nav_menu ul li a.current {
-	background-color: #f19c2b;
+  background-color: #f19c2b;
 
 }
 
 #nav_menu ul li a:hover {
-	background-color: #01a2ff;
+  background-color: #01a2ff;
 }
 
 p {
@@ -77,22 +85,56 @@ p {
   width: 48%;
   text-align: center;
   padding-top: 3%;
-  padding-right:10%
+  padding-right: 10%
 }
 
 img {
   max-width: 100%;
   height: auto;
   border-radius: 20px;
+  border: 5px solid #ffffff;
 }
 
-/* Background image */
-body {
-  font-family: pangolin;
-  position: relative;
-  background: linear-gradient(to bottom, #52a9fa, #f19c2b);
-  padding: 0;
-  margin: 0;
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  p {
+    float: none;
+    width: 100%;
+    font-size: 140%;
+    overflow-y: visible;
+    height: auto;
+  }
+
+  .image-container {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 3%;
+    padding-right: 0;
+  }
+
+  #nav_menu {
+    position: static;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #nav_menu ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  #nav_menu ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  #nav_menu ul li a {
+    display: block;
+    padding: 10px;
+  }
 }
 
 /* 2-column layout */
@@ -116,4 +158,4 @@ header {
 /* Margin for main section */
 main {
   margin: 5%;
-} 
+}
