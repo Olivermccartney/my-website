@@ -1,7 +1,7 @@
 /* Font */
 @font-face {
     font-family: pangolin;
-    src: url(/FONTS/Pangolin/Pangolin-Regular.ttf);
+    src: url(../FONTS/Pangolin/Pangolin-Regular.ttf);
   }
   
   /* Global styles */
