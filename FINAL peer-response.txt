@@ -1,0 +1,7 @@
+Tiffany suggested that I find a way to make the "Friends Of Fig" less washed out due to my gradient background. So I added thin borders to the Nav menu and slightly darkened the colour of the orange.
+
+Nathan suggested that I organize my code better by putting things into subfolders, so I did that, as well as renaming alot of my content so that it made more sense and looked cleaner.
+
+Luke suggested I use percentages rather than px so I did try to go back and implement that to the best of my ability, not everything is in percentage but alot more is now.
+
+Lastly, I just wanted to say that I did try my very best to make my page as responsive as I could, however; I know it still isn't perfect so I apologize for that.
